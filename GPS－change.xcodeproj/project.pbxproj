@@ -13,6 +13,7 @@
 		189099B21D9AC7F000251DA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189099B01D9AC7F000251DA5 /* Main.storyboard */; };
 		189099B41D9AC7F000251DA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189099B31D9AC7F000251DA5 /* Assets.xcassets */; };
 		189099B71D9AC7F000251DA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189099B51D9AC7F000251DA5 /* LaunchScreen.storyboard */; };
+		189099C31D9ACC8A00251DA5 /* Testing.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 189099C21D9ACC8A00251DA5 /* Testing.gpx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		189099B31D9AC7F000251DA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		189099B61D9AC7F000251DA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		189099B81D9AC7F000251DA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		189099C21D9ACC8A00251DA5 /* Testing.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Testing.gpx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 		1890999B1D9AC7F000251DA5 = {
 			isa = PBXGroup;
 			children = (
+				189099C21D9ACC8A00251DA5 /* Testing.gpx */,
 				189099A61D9AC7F000251DA5 /* GPS－change */,
 				189099A51D9AC7F000251DA5 /* Products */,
 			);
@@ -105,11 +108,12 @@
 		1890999C1D9AC7F000251DA5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = vingleo;
 				TargetAttributes = {
 					189099A31D9AC7F000251DA5 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = EX2PTDBQWG;
 					};
 				};
 			};
@@ -138,6 +142,7 @@
 			files = (
 				189099B71D9AC7F000251DA5 /* LaunchScreen.storyboard in Resources */,
 				189099B41D9AC7F000251DA5 /* Assets.xcassets in Resources */,
+				189099C31D9ACC8A00251DA5 /* Testing.gpx in Resources */,
 				189099B21D9AC7F000251DA5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,8 +196,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -236,8 +243,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -265,10 +274,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "GPS－change/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "vingleo.GPS-change";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -276,10 +289,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "GPS－change/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "vingleo.GPS-change";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -302,6 +319,7 @@
 				189099BD1D9AC7F000251DA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
